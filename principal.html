@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicción de Emisiones de CO₂</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+ 
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="main-header">
+        <h1>Predicción de Emisiones de CO₂</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#modelos">Modelos Computacionales</a></li>
+                <li><a href="#comparacion">Comparación de Emisiones</a></li>
+                <li><a href="#machine-learning">Machine Learning</a></li>
+                <li><a href="#visualizaciones">Visualizaciones</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Secciones -->
+    <section id="inicio" class="section">
+        <h2>Bienvenidos</h2>
+        <p>El propósito de esta página es explorar cómo los modelos computacionales y el Machine Learning se aplican para analizar, predecir y mitigar las emisiones globales de CO₂. A través de enfoques innovadores basados en datos y algoritmos, buscamos comprender patrones en las emisiones, identificar factores críticos y proponer soluciones tecnológicas sostenibles que contribuyan a la reducción de gases de efecto invernadero, promoviendo un futuro más responsable y sostenible para el planeta.
+            Explora cómo los modelos computacionales y Machine Learning ayudan a predecir y mitigar las emisiones globales de CO₂.</p>
+    </section>
+
+    <section id="modelos" class="section">
+        <h2>Modelos Computacionales</h2>
+        <p>Los modelos computacionales son herramientas fundamentales para analizar fenómenos complejos relacionados con el medio ambiente. En el contexto de las emisiones de CO₂, estos modelos permiten simular, predecir y comprender los patrones de emisión a nivel global, regional y local.
+
+            <br>¿Qué son los modelos computacionales?
+            Son representaciones matemáticas y computarizadas de sistemas reales que ayudan a analizar el comportamiento de dichos sistemas bajo diferentes escenarios. En el caso del análisis ambiental, estos modelos integran datos históricos, físicos, químicos y económicos para proyectar cómo evolucionarán las emisiones de CO₂ en el futuro.
+            
+            <br>Aplicaciones en el análisis ambiental:
+            Predicción de emisiones:            
+            <br>Utilizan datos históricos para estimar el crecimiento o disminución de emisiones en el tiempo.
+            <br>Ayudan a identificar las principales fuentes de emisión, como el transporte, la industria y la deforestación.
+            
+            <br>Evaluación del impacto:
+            <br> Permiten evaluar los efectos de las emisiones sobre el cambio climático, como el aumento de temperatura global o la alteración de los ecosistemas.
+            
+            <br>Simulación de políticas ambientales:            
+            <br>Analizan escenarios donde se aplican restricciones, como impuestos al carbono o límites de emisión, para evaluar su efectividad.
+           
+            <br> Ejemplo de modelos en acción:
+            <br>Modelos de dispersión atmosférica: Simulan cómo se distribuyen las emisiones en la atmósfera según factores como el viento, la temperatura y la altitud.
+            <br>Modelos de crecimiento económico y emisiones: Relacionan el crecimiento de la economía con el aumento o disminución de emisiones de gases contaminantes.
+            
+            <br>Herramientas utilizadas:
+            <br>Modelos matemáticos: Basados en ecuaciones diferenciales, estadísticas y álgebra lineal.
+            <br>Software especializado: Como MATLAB, Python y simuladores como EnergyPlus o AERMOD.
+            <br>Big Data y Machine Learning: Que potencian el análisis predictivo con grandes volúmenes de datos.
+            En esta página, exploraremos cómo estos modelos se combinan con Machine Learning para ofrecer una visión integral de las emisiones de CO₂, contribuyendo a la toma de decisiones basadas en datos para un futuro más sostenible.</p>
+    </section>
+
+    <section id="machine-learning" class="section">
+        <h2>Machine Learning</h2>
+        <p>El Machine Learning (ML) o aprendizaje automático está transformando radicalmente la forma en que analizamos y predecimos las emisiones de CO₂, proporcionando herramientas avanzadas para interpretar grandes volúmenes de datos ambientales y ofrecer soluciones innovadoras.
+
+            ¿Qué es el Machine Learning?
+            Es una rama de la inteligencia artificial que permite a los sistemas aprender de los datos y mejorar su rendimiento sin necesidad de ser programados explícitamente. En el caso de las emisiones de CO₂, las técnicas de ML analizan patrones complejos y realizan predicciones precisas basadas en datos históricos y actuales.
+            
+            Aplicaciones en la predicción de emisiones:
+            Análisis predictivo:
+            
+            Utiliza algoritmos de regresión para predecir el comportamiento futuro de las emisiones según las tendencias actuales.
+            <br>Identifica los factores que más influyen en el aumento o disminución de las emisiones.
+            
+            <br>Detección de anomalías:
+            <br>Ayuda a detectar regiones, sectores o periodos con patrones atípicos en las emisiones.
+            <br>Facilita la identificación de fuentes desconocidas de emisiones o problemas en los datos.
+            
+            <br>Optimización de políticas ambientales:
+            <br>Evalúa los impactos potenciales de nuevas regulaciones o políticas ambientales antes de su implementación.
+            
+            <br>Simulación de escenarios:
+            <br>Modela cómo diferentes estrategias de mitigación (energías renovables, transporte eléctrico, etc.) pueden afectar las emisiones a largo plazo.
+            
+            <br>Algoritmos más utilizados:
+            <br>Redes neuronales: Para modelar relaciones no lineales complejas.
+            <br>Bosques aleatorios: Útiles para clasificar datos y predecir resultados.
+            <br>Clustering: Para agrupar regiones o países según similitudes en sus emisiones.
+            <br>Ventajas del Machine Learning en este campo:
+            <br>Automatización: Procesa y analiza grandes volúmenes de datos rápidamente.
+            <br>Adaptabilidad: Aprende y mejora continuamente a medida que se incorporan nuevos datos.
+            <br>Precisión: Ofrece predicciones detalladas y ajustadas a realidades específicas.
+            <br>El uso de Machine Learning no solo mejora la precisión en las predicciones, sino que también ofrece perspectivas profundas para abordar el cambio climático de manera proactiva, ayudándonos a construir un mundo más sostenible.</p>
+    </section>
+
+    <!--<section id="mapa" class="section">
+        <h2>Mapa Interactivo</h2>
+        <p>Explora las emisiones de CO₂ por región en diferentes años:</p>
+        <input type="range" id="year-slider" min="2000" max="2020" step="5" value="2000" />
+        <span id="current-year">2000</span>
+        <div id="map" style="height: 500px; margin-top: 20px;"></div>
+    </section> -->
+
+    <section id="comparacion" class="section">
+        <h2>Comparación de Emisiones</h2>
+        <p>Selecciona varios países para comparar sus emisiones de CO₂:</p>
+        <div id="country-selector">
+            <select id="country-select" multiple size="5"></select>
+        </div>
+        <button id="compare-btn">Comparar</button>
+        <canvas id="comparacionChart" width="400" height="200"></canvas>
+    </section>
+
+    <section id="mapa" class="section">
+        <h2>Mapa Interactivo</h2>
+        <p>Explora las emisiones de CO₂ con diferentes funcionalidades:</p>
+        
+        <!-- Controles para el mapa -->
+        <div style="margin-bottom: 15px;">
+            <!-- Controles de detalle (regiones o países) -->
+            <div>
+                <label>
+                    <input type="radio" name="detail-level" value="regions" checked> Ver regiones
+                </label>
+                <label>
+                    <input type="radio" name="detail-level" value="countries"> Ver países
+                </label>
+            </div>
+            
+            <!-- Slider de año -->
+            <div style="margin-top: 10px;">
+                <input type="range" id="year-slider" min="2000" max="2020" step="5" value="2000" />
+                <span id="current-year">2000</span>
+            </div>
+            
+            <!-- Botón de reproducción -->
+            <div style="margin-top: 10px;">
+                <button id="play-pause">Reproducir</button>
+            </div>
+        </div>
+        
+        <!-- Contenedor del mapa -->
+        <div id="map" style="height: 500px;"></div>
+    </section>
+    
+    <section id="visualizaciones" class="section">
+            <h2>Visualizaciones</h2>
+            <p>Selecciona una región para analizar las emisiones de CO₂:</p>
+            <select id="region-selector">
+                <option value="global">Global</option>
+                <option value="america">América</option>
+                <option value="europa">Europa</option>
+                <option value="asia">Asia</option>
+                <option value="africa">África</option>
+                <option value="oceania">Oceanía</option>
+            </select>
+            <div id="graph-container" style="margin-top: 20px;">
+                <canvas id="emissionsChart"></canvas>
+                 
+            </div>
+        </section>
+        
+    </section>
+
+    <section id="contacto" class="section">
+        <h2>Contacto</h2>
+        <p>¿Tienes preguntas o comentarios? ¡Contáctanos!</p>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Correo:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+        <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Predicción de Emisiones de CO₂. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        let countryList = []; // Lista global de países
+    
+        function loadCountries() {
+            fetch('emisiones.json')
+                .then(response => response.json())
+                .then(data => {
+                    countryList = data.flatMap(region => region.countries.map(country => ({
+                        name: country.name,
+                        emissions: country.emissions,
+                    })));
+    
+                    const countrySelect = document.getElementById("country-select");
+                    countryList.forEach(country => {
+                        const option = document.createElement("option");
+                        option.value = country.name;
+                        option.textContent = country.name;
+                        countrySelect.appendChild(option);
+                    });
+                })
+                .catch(error => console.error("Error al cargar la lista de países:", error));
+        }
+    
+        loadCountries(); // Llama a la función al cargar la página
+    </script>
+    
+    <script>
+        let comparisonChart;
+    
+        function createComparisonChart(selectedCountries) {
+            const labels = [2000, 2005, 2010, 2015, 2020];
+            const datasets = selectedCountries.map(countryName => {
+                const country = countryList.find(c => c.name === countryName);
+    
+                return {
+                    label: country.name,
+                    data: labels.map(year => country.emissions[year] || 0),
+                    borderColor: getColor(Math.max(...Object.values(country.emissions))),
+                    fill: false
+                };
+            });
+    
+            if (comparisonChart) comparisonChart.destroy(); // Destruye el gráfico anterior si existe
+    
+            const ctx = document.getElementById("comparacionChart").getContext("2d");
+            comparisonChart = new Chart(ctx, {
+                type: "line",
+                data: {
+                    labels: labels,
+                    datasets: datasets
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: "Comparación de emisiones de CO₂"
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: "Emisiones (Gt)"
+                            }
+                        },
+                        x: {
+                            title: {
+                                display: true,
+                                text: "Año"
+                            }
+                        }
+                    }
+                }
+            });
+        }
+    
+        document.getElementById("compare-btn").addEventListener("click", () => {
+            const selectedOptions = Array.from(document.getElementById("country-select").selectedOptions);
+            const selectedCountries = selectedOptions.map(option => option.value);
+            createComparisonChart(selectedCountries);
+        });
+    </script>
+    
+
+    <script>
+        // Mostrar/Ocultar contenido
+        const toggleButton = document.getElementById("toggle-graph");
+        const graphContainer = document.getElementById("graph-container");
+    
+        toggleButton.addEventListener("click", () => {
+            if (graphContainer.style.display === "none") {
+                graphContainer.style.display = "block";
+                toggleButton.textContent = "Ocultar gráfica";
+            } else {
+                graphContainer.style.display = "none";
+                toggleButton.textContent = "Mostrar gráfica";
+            }
+        });
+    </script>
+
+<script>
+    // Datos de emisiones por región
+    const emissionsData = {
+        labels: ["2000", "2005", "2010", "2015", "2020"],
+        datasets: {
+            global: [24, 28, 32, 35, 37],
+            america: [7.5, 7.8, 7.6, 6.9, 6.2],
+            europa: [8.2, 7.9, 7.3, 6.8, 6.1],
+            asia: [12.1, 14.5, 18.2, 21.4, 24.3],
+            africa: [1.2, 1.4, 1.8, 2.1, 2.5],
+            oceania: [0.4, 0.5, 0.6, 0.7, 0.8]
+        }
+    };
+
+    // Inicializar la gráfica
+    const ctx = document.getElementById("emissionsChart").getContext("2d");
+    const chartConfig = {
+        type: "line",
+        data: {
+            labels: emissionsData.labels,
+            datasets: [{
+                label: "Emisiones Globales de CO₂ (Gt)",
+                data: emissionsData.datasets.global,
+                backgroundColor: "rgba(65, 105, 225, 0.2)",
+                borderColor: "rgba(65, 105, 225, 1)",
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: { position: "top" },
+                title: {
+                    display: true,
+                    text: "Emisiones Globales de CO₂"
+                }
+            }
+        }
+    };
+    const emissionsChart = new Chart(ctx, chartConfig);
+
+    // Actualizar la gráfica según la región seleccionada
+    const regionSelector = document.getElementById("region-selector");
+    regionSelector.addEventListener("change", (event) => {
+        const region = event.target.value;
+        const regionData = emissionsData.datasets[region];
+        
+        // Actualizar datos en la gráfica
+        emissionsChart.data.datasets[0].data = regionData;
+        emissionsChart.data.datasets[0].label = `Emisiones de CO₂ - ${region.charAt(0).toUpperCase() + region.slice(1)}`;
+        emissionsChart.update();
+    });
+</script>
+
+
+<script>
+    const map = L.map('map').setView([20, 0], 2);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    const yearSlider = document.getElementById("year-slider");
+    const currentYearSpan = document.getElementById("current-year");
+    const detailLevelRadios = document.getElementsByName("detail-level");
+
+    let markers = [];
+    let detailLevel = "regions"; // Por defecto en regiones
+    let playing = false;
+
+    function getColor(emissions) {
+        if (emissions > 20) return "red";
+        if (emissions > 10) return "orange";
+        if (emissions > 5) return "yellow";
+        return "green";
+    }
+
+    function clearMarkers() {
+        markers.forEach(marker => map.removeLayer(marker));
+        markers = [];
+    }
+
+    async function loadData() {
+        try {
+            const response = await fetch('emisiones.json');
+            const data = await response.json();
+            return data;
+        } catch (error) {
+            console.error("Error al cargar los datos", error);
+            return [];
+        }
+    }
+
+    async function updateMarkers(year) {
+        clearMarkers();
+
+        const data = await loadData();
+        
+        if (detailLevel === "regions") {
+            data.forEach(region => {
+                const totalEmissions = region.countries.reduce((sum, country) => {
+                    return sum + (country.emissions[year] || 0);
+                }, 0);
+
+                const marker = L.circleMarker([region.lat, region.lon], {
+                    color: getColor(totalEmissions),
+                    radius: 10,
+                    fillOpacity: 0.8
+                }).addTo(map);
+
+                marker.bindPopup(`<b>${region.region}</b><br>Emisiones: ${totalEmissions.toFixed(2)} Gt`);
+                markers.push(marker);
+            });
+        } else if (detailLevel === "countries") {
+            data.forEach(region => {
+                region.countries.forEach(country => {
+                    const emissions = country.emissions[year];
+                    if (emissions) {
+                        const marker = L.circleMarker([country.lat, country.lon], {
+                            color: getColor(emissions),
+                            radius: 10,
+                            fillOpacity: 0.8
+                        }).addTo(map);
+
+                        marker.bindPopup(`<b>${country.name}</b><br>Emisiones: ${emissions} Gt`);
+                        markers.push(marker);
+                    }
+                });
+            });
+        }
+    }
+
+    detailLevelRadios.forEach(radio => {
+        radio.addEventListener("change", (event) => {
+            detailLevel = event.target.value;
+            updateMarkers(yearSlider.value);
+        });
+    });
+
+    yearSlider.addEventListener("input", (event) => {
+        const selectedYear = event.target.value;
+        currentYearSpan.textContent = selectedYear;
+        updateMarkers(selectedYear);
+    });
+
+    function playPauseAnimation() {
+        if (playing) {
+            clearInterval(timer);
+            playing = false;
+            document.getElementById("play-pause").textContent = "Reproducir";
+        } else {
+            timer = setInterval(() => {
+                let currentYear = parseInt(yearSlider.value) + 5;
+                if (currentYear > 2020) currentYear = 2000; 
+                yearSlider.value = currentYear;
+                currentYearSpan.textContent = currentYear;
+                updateMarkers(currentYear);
+            }, 500);
+
+            playing = true;
+            document.getElementById("play-pause").textContent = "Detener";
+        }
+    }
+
+    let timer;
+    document.getElementById("play-pause").addEventListener("click", playPauseAnimation);
+
+    // Cargar inicial
+    updateMarkers("2000");
+</script>
+
+   
+</body>
+</html>
